@@ -10,7 +10,7 @@ const newConnectortestttt = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const mobileoctAPI = axios.create({
-  baseURL: "https://mobile-77-oct-dev-12879-prod.herokuapp.com/",
+  baseURL: "https://mobile-77-oct-dev-12879.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list(action) {
@@ -28,6 +28,28 @@ function api_v1_customtext_partial_update(action) {
   return mobileoctAPI.patch(`/api/v1/customtext/${action.id}/`, {
     data: action.data
   })
+}
+function api_v1_hgfhhggj_list(action) {
+  return mobileoctAPI.get(`/api/v1/hgfhhggj/`)
+}
+function api_v1_hgfhhggj_create(action) {
+  return mobileoctAPI.post(`/api/v1/hgfhhggj/`, { data: action.data })
+}
+function api_v1_hgfhhggj_read(action) {
+  return mobileoctAPI.get(`/api/v1/hgfhhggj/${action.id}/`)
+}
+function api_v1_hgfhhggj_update(action) {
+  return mobileoctAPI.put(`/api/v1/hgfhhggj/${action.id}/`, {
+    data: action.data
+  })
+}
+function api_v1_hgfhhggj_partial_update(action) {
+  return mobileoctAPI.patch(`/api/v1/hgfhhggj/${action.id}/`, {
+    data: action.data
+  })
+}
+function api_v1_hgfhhggj_delete(action) {
+  return mobileoctAPI.delete(`/api/v1/hgfhhggj/${action.id}/`)
 }
 function api_v1_homepage_list(action) {
   return mobileoctAPI.get(`/api/v1/homepage/`)
@@ -93,6 +115,12 @@ export const apiService = {
   api_v1_customtext_read,
   api_v1_customtext_update,
   api_v1_customtext_partial_update,
+  api_v1_hgfhhggj_list,
+  api_v1_hgfhhggj_create,
+  api_v1_hgfhhggj_read,
+  api_v1_hgfhhggj_update,
+  api_v1_hgfhhggj_partial_update,
+  api_v1_hgfhhggj_delete,
   api_v1_homepage_list,
   api_v1_homepage_read,
   api_v1_homepage_update,
