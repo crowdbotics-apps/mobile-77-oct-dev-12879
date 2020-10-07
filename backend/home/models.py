@@ -8,8 +8,8 @@ from django.db import models
 
 class CustomText(models.Model):
     title = models.CharField(
-        max_length=150,
         blank=True,
+        max_length=150,
     )
     hfhgfhf = models.BigIntegerField(
         null=True,
@@ -42,3 +42,10 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Hgfhhggj(models.Model):
+    "Generated Model"
+    hgfhgfghfhgfhgf = models.BigIntegerField(
+        blank=True,
+    )

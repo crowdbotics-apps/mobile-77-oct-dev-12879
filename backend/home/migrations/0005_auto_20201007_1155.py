@@ -6,22 +6,22 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0004_auto_20201007_1148'),
+        ("home", "0004_auto_20201007_1148"),
     ]
 
     operations = [
         migrations.RenameField(
-            model_name='customtext',
-            old_name='gfghfhgfhgfgh',
-            new_name='hgfhg',
+            model_name="customtext",
+            old_name="gfghfhgfhgfgh",
+            new_name="hgfhg",
         ),
         migrations.RemoveField(
-            model_name='customtext',
-            name='ghfhgf',
+            model_name="customtext",
+            name="ghfhgf",
         ),
         migrations.AlterField(
-            model_name='customtext',
-            name='title',
+            model_name="customtext",
+            name="title",
             field=models.CharField(blank=True, max_length=150),
         ),
     ]
