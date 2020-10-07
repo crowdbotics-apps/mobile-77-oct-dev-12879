@@ -9,16 +9,13 @@ from django.db import models
 class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
-    )
-    gfghfhgfhgfgh = models.BigIntegerField(
-        null=True,
         blank=True,
     )
     hfhgfhf = models.BigIntegerField(
         null=True,
         blank=True,
     )
-    ghfhgf = models.BigIntegerField(
+    hgfhg = models.BigIntegerField(
         null=True,
         blank=True,
     )
