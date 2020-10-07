@@ -14,6 +14,14 @@ class CustomText(models.Model):
         null=True,
         blank=True,
     )
+    hfhgfhf = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
+    ghfhgf = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
 
     def __str__(self):
         return self.title
